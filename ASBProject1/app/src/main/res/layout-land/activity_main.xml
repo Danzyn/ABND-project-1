@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+PROJECT 1
+BUSINESS CARD
+LANDSCAPE VERSION
+-->
+
+<!-- the vertical LinearLayout that holds all the other views -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.android.asb_project1.MainActivity">
+
+    <!-- the ImageView for the scitech.today logo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:contentDescription="scitech.today Logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/scitech" />
+
+    <!-- included the common_layout.xml
+    it contains the code that is common for landscape and portrait orientation of the device -->
+    <include layout="@layout/common_layout" />
+
+
+</LinearLayout>

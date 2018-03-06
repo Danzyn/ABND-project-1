@@ -1,0 +1,97 @@
+<!--
+nested vertical LinearLayout holds the title and contact details -
+the same for landscape and portrait orientation
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <!-- nested horizontal LinearLayout 1 - business description -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- description icon -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:contentDescription="Info Icon"
+            android:src="@drawable/ic_info_black_24dp"
+            android:tint="@color/colorPrimary" />
+
+        <!-- description text field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="scitech.today is an editorial project that is about, well, science&amp;technology and how it impacts our life and the little blue dot we live on."
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- nested horizontal LinearLayout 2 - for the www field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <!-- www icon -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:contentDescription="Www Icon"
+            android:src="@drawable/ic_language_black_24dp"
+            android:tint="@color/colorPrimary" />
+
+        <!-- www text field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="http://scitech.today"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- nested horizontal LinearLayout 3 - for the address field -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- address icon -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:contentDescription="Address Icon"
+            android:src="@drawable/ic_directions_boat_black_24dp"
+            android:tint="@color/colorPrimary" />
+
+        <!-- address text field -->
+        <!-- fun fact: the island listed as the address,
+        is one of the largest penguin colonies -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Zavodovski Island, South Atlantic Ocean"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
